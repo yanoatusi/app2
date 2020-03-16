@@ -66,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
             // 画面に表示
             TextView view = findViewById(R.id.text_view);
             view.setText("緯度:" + location.getLatitude() + " 経度:" + location.getLongitude());
+            TextView view2 = findViewById(R.id.text_view2);
+            view2.setText("標高:" + Double.toString(location.getAltitude())+ "m");
         };
     }
 
